@@ -1,9 +1,14 @@
 var butt = document.querySelector("body");
+butt.style.background = "yellow";
 
 butt.addEventListener("click",changeBgroundClr);
 
+//var isWhite = "yellow";
+
 function changeBgroundClr(){
-    //var isWhite = true;
-    butt.style.background = "blue"; //isWhite ? blue : white;
-    //isWhite = false;
+    if(butt.style.background == "yellow"){
+        butt.style.background = "blue";
+    } else{
+        butt.style.background = "yellow";
+    }
 }
