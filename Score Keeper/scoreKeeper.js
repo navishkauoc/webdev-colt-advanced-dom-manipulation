@@ -3,9 +3,15 @@ var p2Button = document.getElementById("p2");
 var p1Disp = document.getElementById("p1Display");
 var p2Disp = document.getElementById("p2Display");
 var p1Score = 0;
+var p2Score = 0;
 
 p1Button.addEventListener("click", function(){
     p1Score++;
     console.log(p1Score);
     p1Disp.textContent = p1Score;
+});
+
+p2Button.addEventListener("click", function(){
+    p2Score++;
+    p2Disp.textContent = p2Score;
 });
